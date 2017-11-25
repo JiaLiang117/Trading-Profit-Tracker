@@ -1,5 +1,13 @@
-Class Main():
+class Trading:
+
+
     def __init__(self):
+        self.data = [10]
 
 
-    self.data = []
+
+x=MyClass()
+
+x.data.append(10)
+
+print(x.data)
