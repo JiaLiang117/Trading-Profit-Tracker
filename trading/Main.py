@@ -1,18 +1,19 @@
 import pandas as pd
 
+
 class Trading:
-
-
     def __init__(self):
-        self.CI=pd.DataFrame(columns=["ticker","position","quantity","Open","Current_Close","OpenDate","CloseDate",
-                                       ])
+        # CI Journel Entries
+
+        self.CI = pd.DataFrame(
+            columns=["id", "ticker", "position", "quantity", "Open", "Current_Close", "OpenDate", "CloseDate",
+                     "margin", "commissions", "currency", "rate", "cc_pnl", "sgd_pnl", "total return"])
+
+        # income statement
+        self.PnL = pd.DataFrame(columns=["ticker", "position", "quantity", "pnl"])
 
 
-        self.PnL=pd.DataFrame(columns=[])
-
-        pass
-
-    def stock_trade_cityindex(self, ticker, price, quantity, direction,commission, currency):
+    def stock_trade_cityindex(self, ticker, price, quantity, direction, commission, currency):
         """
         ticker (str) for standard chartered currency should contain only the target currency
 
@@ -24,21 +25,21 @@ class Trading:
         :param price:  (float) trade price
         :param quantity: (int) number of stocks or currency traded
         :param direction: (int) long=1, short=-1
-        :param commission: (float)
+        :param margin: (float) percentage of margin required
+        :param commission: (float) total commission cost
         :param currency: (str)  currency of stock
         :param rate: (float)    currency rate
+        :param open: (int) 1 for open, 0 for close
 
         :return: None
         """
 
 
-        dasfdsa
 
 
 
 
-
-x=MyClass()
+x = MyClass()
 
 x.data.append(10)
 
